@@ -1,3 +1,6 @@
+import "regenerator-runtime/runtime.js";
+import 'end-polyFills';
+
 import { createStore, applyMiddleware } from 'redux';
 import { createYieldEffectMiddleware } from 'redux-yield-effect';
 import { put, fork, join } from 'redux-yield-effect/lib/effects';
@@ -6,7 +9,6 @@ import { createEntity } from './entities/index.js';
 import reducer from './reducer.js';
 import metaSelector from 'redux-meta-selector';
 import graphics from './graphics.js';
-import 'end-polyFills';
 
 document.addEventListener('DOMContentLoaded', start);
 
